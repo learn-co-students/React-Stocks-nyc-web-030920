@@ -6,10 +6,8 @@ class StockContainer extends Component {
   render() {
     return (
       <div>
-        <h2>Stocks</h2>
-        {
-          //render the list of stocks here
-        }
+        <h2>Corn Stocks</h2>
+        {this.props.stocks.map((stock,index) => <Stock clickHandler={this.props.buyStock} key={index} {...stock}/>)}
       </div>
     );
   }
@@ -17,3 +15,4 @@ class StockContainer extends Component {
 }
 
 export default StockContainer;
+ 
