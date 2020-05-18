@@ -33,7 +33,8 @@ class MainContainer extends Component {
   allStocks=this.state.stocks.sort((a,b)=>a.name.localeCompare(b.name))
  }else if (this.state.sort==='Price'){
    allStocks = this.state.stocks.sort((a,b)=>(a.price-b.price))
- }else if(this.state.filter){
+ }
+ if(this.state.filter){
    allStocks= this.state.stocks.filter((stock)=>{
      if(stock.type === this.state.filter){
        return stock
