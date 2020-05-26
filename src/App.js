@@ -3,7 +3,10 @@ import Header from './components/Header'
 import MainContainer from './containers/MainContainer'
 
 class App extends Component {
+
+
   render() {
+    console.log(this.state)
     return (
       <div>
         <Header/>
@@ -11,6 +14,6 @@ class App extends Component {
       </div>
     );
   }
-}
+  }
 
 export default App;
